@@ -1,0 +1,19 @@
+.header{
+    display:flex;
+    flex-direction:row;
+    width:100%;
+    position: relative;
+    border-bottom:2px solid grey;
+    font-size:18px;
+    font-weight: bold;
+}
+.heading{
+    position:absolute;
+    left:47%;
+    font-size:18px;
+    font-weight: bold;
+}
+.icon{
+    position: absolute;
+    right:2%;
+}
