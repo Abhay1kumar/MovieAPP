@@ -1,24 +1,16 @@
-import React from 'react'
 import './Header.css'
-import profile from './profile.jpg'
-import PermIdentityIcon from '@mui/icons-material/PermIdentity';
-import {Link} from 'react-router-dom'
+import React from 'react'
 
-
-export default function Header() {
-  return (
-    <div className="header">
-        <div className="image">
-          <Link to ='/'><img src={profile} width="60px" height="60px" alt="" /></Link>
-            
+function Header() {
+    return (
+        <div>
+         <span onClick={() => window.scrollTo(0,0)} className="header">🎬Entertainment Hub🎬
+         <p style={{fontSize:"11px" , fontWeight:"bold"}}>by Abhay Kumar</p>
+        </span>
+       
         </div>
-        <p>Abhay Kumar</p>
-        <div className="heading">
-         <p> User Data</p>  
-        </div>
-        <div className="icon">
-        <PermIdentityIcon sx={{fontSize:"40"}} />
-        </div>
-    </div>
-  )
+       
+    )
 }
+
+export default Header
